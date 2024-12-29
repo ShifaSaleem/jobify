@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "679139348143",
+    "project_id": "jobify-826b8",
+    "storage_bucket": "jobify-826b8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679139348143:android:0f587cc27e7530c8d10e5a",
+        "android_client_info": {
+          "package_name": "com.jobify.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo2Y9gitO38dPbxvWdtt3wYcLtTvJENxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
