@@ -1,6 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import '../components/button.dart';
 import '../components/input_fields.dart';
 import '../input_validators/input_validators.dart';
@@ -106,7 +104,7 @@ class _SignupScreenState extends State<SignupScreen> with SingleTickerProviderSt
                         builder: (context) => JobseekerCompleteProfileScreen(user: result)));
                   } else if(result is Company){
                     Navigator.pushReplacement(context, MaterialPageRoute(
-                        builder: (context) => const EmployerCompleteProfileScreen()));
+                        builder: (context) => EmployerCompleteProfileScreen(user: result,)));
                   }
                   _nameController.clear();
                   _emailController.clear();

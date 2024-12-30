@@ -45,3 +45,14 @@ String? validateContact(String? value) {
       ? 'Enter a valid contact number'
       : null);
 }
+
+String? validateWebsite(String? value) {
+  const pattern = r'^(https?:\/\/)?([a-zA-Z0-9]+[.-_])*[a-zA-Z0-9]+\.[a-zA-Z]{2,}';
+  final regex = RegExp(pattern);
+
+  return value == null || value.isEmpty
+      ? 'Please enter your website URL'
+      : (!regex.hasMatch(value)
+      ? 'Enter a valid website URL'
+      : null);
+}

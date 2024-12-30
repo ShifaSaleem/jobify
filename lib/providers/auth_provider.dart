@@ -122,7 +122,7 @@ class AuthProviders {
     required String location,
   }) async {
     try {
-      await _firestore.collection('employers').doc(userId).update({
+      await _firestore.collection('companies').doc(userId).update({
         'logo': logo,
         'bio': bio,
         'website': website,
